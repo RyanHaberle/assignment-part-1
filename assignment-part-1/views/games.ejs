@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" const="text/html;charset=UTF-8" />
+    <link href="http://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="style.css" >
+    
+    <!--Socket I.O on client side-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+    <title>Simple Chat App</title>
+   
+  </head>
+
+  <body>
+    <header>
+      <h1>Games Room</h1>  
+      
+    </header>
+
+    <section>
+      <div id="change_username">
+	<input id="username" type="text" />
+	<button id="send_game_username" type="button">Change username</button>
+      </div>
+    </section>
+
+    <section id="chatroom">
+      <section id="feedback"></section>
+    </section>
+    <section id ="roomlist">
+        <a href="mainroom"><button id="roombutton">Main Room</button></a> 
+    <a href="games"><button id="roombutton">Games Room</button></a> 
+   
+    </section>
+    
+
+    <section id="input_zone"> 
+      <input id="game_message" class="vertical-align" type="text" />
+      <button id="send_game_message" class="vertical-align" type="button">Send</button>
+    </section>
+
+    <!--The only way to work with socket.io is in a .js file. So at the end of your body add these lines:-->
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="gameroomchat.js"></script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "assignment-part-1",
+  "version": "8.12.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.18",
+    "nodemon": "^1.18.10",
+    "socket.io": "^2.2.0"
+  }
+}
